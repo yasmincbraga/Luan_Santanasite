@@ -25,11 +25,22 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top"><img src="img/assinatura_Luan.png" class="logo" alt=""></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="container px-4 px-lg-5 d-flex align-items-center">
+            
+            <!-- Logo -->
+            <a class="navbar-brand me-auto" href="#page-top">
+                <img src="img/assinatura_Luan.png" class="logo" alt="">
+            </a>
+
+            <!-- Botão hamburguer alinhado à direita -->
+            <button class="navbar-toggler ms-auto" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">Breve História</a></li>
@@ -78,53 +89,46 @@
     </section>
     <!-- Services-->
     <section class="page-section" id="services">
-        <div class="container px-4 px-lg-5">
+        <div class="container text-center px-4 px-lg-5">
             <h2 class="text-center mt-0">Mais a Fundo</h2>
             <hr class="divider" />
-            <div class="row gx-4 gx-lg-5 center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">  <!-- alterado: adicionado justify-content-center -->
                 <div class="card col-lg-3 col-md-6 text-center" style="width: 16rem;">
                     <img src="img/album/Luan-Santana-to de cara.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Tô de Cara (2009)</h5>
-                        <p class="card-text">Álbum de estreia de Luan Santana, lançado em março de 2009, o disco traz 14
-                            faixas marcando o início oficial da sua carreira nacional.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver
-                            mais</button>
+                        <p class="card-text">Álbum de estreia de Luan Santana, lançado em março de 2009, o disco traz 14 faixas marcando o início oficial da sua carreira nacional.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver mais</button>
                     </div>
                 </div>
                 <div class="card col-lg-3 col-md-6 text-center" style="width: 16rem;">
                     <img src="img/album/Ao Vivo em Campo Grande (2009).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ao Vivo em CG (2009)</h5>
-                        <p class="card-text">Primeiro DVD e segundo álbum de Luan, gravado logo após o sucesso de Tô de
-                            Cara.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver
-                            mais</button>
+                        <p class="card-text">Primeiro DVD e segundo álbum de Luan, gravado logo após o sucesso de Tô de Cara.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver mais</button>
                     </div>
                 </div>
                 <div class="card col-lg-3 col-md-6 text-center" style="width: 16rem;">
                     <img src="img/album/O Nosso Tempo é Hoje (2013).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">O Nosso Tempo é Hoje (2013)</h5>
-                        <p class="card-text">Um dos projetos mais elogiados da carreira, mostrando uma mistura de
-                            sertanejo com pop e baladas românticas.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver
-                            mais</button>
+                        <p class="card-text">Um dos projetos mais elogiados da carreira, mostrando uma mistura de sertanejo com pop e baladas românticas.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver mais</button>
                     </div>
                 </div>
                 <div class="card col-lg-3 col-md-6 text-center" style="width: 16rem;">
                     <img src="img/album/Luan City (2022).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Luan City (2022)</h5>
-                        <p class="card-text">Quatro anos após o boom inicial, Um dos trabalhos mais ambiciosos, o Luan
-                            City foi pensado como uma “cidade musical” criada pelo cantor.</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Ver
-                            mais</button>
+                        <p class="card-text">Quatro anos após o boom inicial, Um dos trabalhos mais ambiciosos, o Luan City foi pensado como uma “cidade musical” criada pelo cantor.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Ver mais</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- Portfolio-->
     <div id="portfolio">
         <div class="container-fluid p-0">
@@ -164,9 +168,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Script Bootstrap -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="#" data-bs-toggle="modal" data-bs-target="#modalAcustico"
@@ -351,8 +352,11 @@
     </section>
 
     <section class="mt-5 px-4">
-        <div class="clearfix">
-            <img src="img/registro historico.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <div class="clearfix texto-maior">
+            <a href="https://www.luansantana.com.br/"><img src="img/registro historico.png" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid " alt="..."></a>
+            <p class="text-muted">
+                Clique na imagem e vá ao site oficial.
+            </p>
 
             <p>
                 A turnê Registro Histórico marca um momento especial na carreira de Luan Santana, celebrando seus 18
@@ -387,8 +391,9 @@
 
             <!-- Imagem com link para o vídeo -->
             <a href="https://www.youtube.com/live/RYs6H1YhImo?si=ZU1sxcEgXoBqR3RD" target="_blank" rel="noopener noreferrer">
-                <img src="img/entrevista c luan.png" alt="Assista à entrevista no YouTube"
-                    class="img-fluid rounded shadow-lg mb-4" style="max-width: 800px; cursor: pointer;">
+             <img src="img/entrevista c luan.png"
+                 alt="Assista à entrevista no YouTube"
+                 class="img-fluid rounded shadow-lg mb-4 entrevista-img">
             </a>
 
             <p class="text-muted">
@@ -428,7 +433,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="img/album/Luan-Santana-to de cara.jpg" class="img-fluid mb-3 rounded" alt="">
+                    <a href="https://youtu.be/imzlvBey3RY?si=z5IWtwcJJenhPZ8Y"><img src="img/album/Luan-Santana-to de cara.jpg" class="img-fluid mb-3 rounded" alt=""></a>
                     <p>O primeiro álbum de estúdio de Luan Santana marcou a chegada de um novo ídolo do sertanejo
                         universitário. Lançado em 2009, o disco traz 14 faixas e tem como grande destaque o hit
                         “Meteoro”, que rapidamente virou um fenômeno nacional — tocando em rádios, programas de TV e
@@ -436,8 +441,8 @@
                         comentados do país naquele ano. Com um som leve, letras românticas e arranjos modernos, Tô de
                         Cara abriu as portas para o sertanejo universitário alcançar um público mais jovem, aproximando
                         o gênero das novas gerações.</p>
-                    <p>Principais faixas: Meteoro, Você Não Sabe o Que É Amor, Tô de Cara, Minha Boca Você Não Beija
-                        Mais</p>
+                    <p>Principais faixas: <a href="https://youtu.be/ffILOVQ_tfk?si=lhlHxop7G2L7kgbv">Pra Você Lembrar de Mim</a>, <a href="https://youtu.be/WtT93GM16I4?si=0qKvUus6d9Lhjqqb">Você Não Sabe o Que É Amor</a>, <a href="https://youtu.be/aU6fIanoqVI?si=4LrlLOaPHlPsy7l9">Tô de Cara</a>
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>

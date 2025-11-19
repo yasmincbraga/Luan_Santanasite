@@ -1,5 +1,5 @@
 .logo{
-    width: 30%;
+    width: 20%;
 }
 
 .card {
@@ -9,4 +9,27 @@
 .card-img-top {
   margin-top: 10px; /* Espaço entre imagem e topo do card */
   border-radius: 8px; /* opcional, só pra deixar mais bonito */
+}
+
+/* Tamanho médio do ícone */
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Ajuste fino do botão */
+.navbar-toggler {
+  padding: 4px 8px;     /* deixa menor */
+  margin-top: -6px;     /* sobe um pouco para alinhar com o logo */
+  border: none;         /* opcional — visual mais limpo */
+}
+
+/* Garante que o logo e o botão fiquem perfeitamente alinhados */
+#mainNav .container {
+  align-items: center;
+}
+
+.texto-maior p {
+  font-size: 1.15rem; /* ajuste fino */
+  line-height: 1.7;   /* deixa mais bonito e legível */
 }
